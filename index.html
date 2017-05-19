@@ -22,6 +22,8 @@
             <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna orci, sodales quis pellentesque vel, pellentesque pellentesque risus. Curabitur sit amet magna non leo porta fringilla eu ultricies neque. In ultrices non odio cursus luctus. In leo leo, venenatis eu iaculis vitae, congue id odio. In hac habitasse platea dictumst. Integer vestibulum, tellus non dictum fringilla, mauris quam interdum tellus, eget porta metus metus at arcu. Aliquam semper ex non pellentesque luctus. Donec auctor accumsan dictum. Nulla at orci ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><br>
             <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna orci, sodales quis pellentesque vel, pellentesque pellentesque risus. Curabitur sit amet magna non leo porta fringilla eu ultricies neque. In ultrices non odio cursus luctus. In leo leo, venenatis eu iaculis vitae, congue id odio. In hac habitasse platea dictumst. Integer vestibulum, tellus non dictum fringilla, mauris quam interdum tellus, eget porta metus metus at arcu. Aliquam semper ex non pellentesque luctus. Donec auctor accumsan dictum. Nulla at orci ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><br>
             <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna orci, sodales quis pellentesque vel, pellentesque pellentesque risus. Curabitur sit amet magna non leo porta fringilla eu ultricies neque. In ultrices non odio cursus luctus. In leo leo, venenatis eu iaculis vitae, congue id odio. In hac habitasse platea dictumst. Integer vestibulum, tellus non dictum fringilla, mauris quam interdum tellus, eget porta metus metus at arcu. Aliquam semper ex non pellentesque luctus. Donec auctor accumsan dictum. Nulla at orci ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><br>
+            <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna orci, sodales quis pellentesque vel, pellentesque pellentesque risus. Curabitur sit amet magna non leo porta fringilla eu ultricies neque. In ultrices non odio cursus luctus. In leo leo, venenatis eu iaculis vitae, congue id odio. In hac habitasse platea dictumst. Integer vestibulum, tellus non dictum fringilla, mauris quam interdum tellus, eget porta metus metus at arcu. Aliquam semper ex non pellentesque luctus. Donec auctor accumsan dictum. Nulla at orci ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><br>
+            <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna orci, sodales quis pellentesque vel, pellentesque pellentesque risus. Curabitur sit amet magna non leo porta fringilla eu ultricies neque. In ultrices non odio cursus luctus. In leo leo, venenatis eu iaculis vitae, congue id odio. In hac habitasse platea dictumst. Integer vestibulum, tellus non dictum fringilla, mauris quam interdum tellus, eget porta metus metus at arcu. Aliquam semper ex non pellentesque luctus. Donec auctor accumsan dictum. Nulla at orci ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><br>
           </div>
           <div class="socials">
             <div class="socials-divs">
@@ -36,5 +38,29 @@
             gammingweb.com &copy; 2017
           </div>
         </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+          var NavY = $('.nav').offset().top;
+
+          var stickyNav = function(){
+          var ScrollY = $(window).scrollTop();
+
+          if (ScrollY > NavY) {
+              $('.nav').addClass('sticky');
+          } else {
+              $('.nav').removeClass('sticky');
+          }
+          };
+
+          stickyNav();
+
+          $(window).scroll(function() {
+              stickyNav();
+          });
+          });          
+        </script>
+
+
   </body>
 </html>
