@@ -75,7 +75,6 @@ span {
   text-align: center;
   border-top: 1px solid #751b1b;
   border-bottom: 1px solid #751b1b;
-  height: 40px;
 }
 .content {
   width: 1000px;
@@ -137,4 +136,49 @@ span {
 	left: 0;
 	top: 0;
 	z-index: 100;
+}
+ol {
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+ol a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+ol > li {
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 1.5px dotted #751b1b;
+}
+ol > li:first-child {
+	border-left: 1.5px dotted #751b1b;
+}
+ol > li:hover {
+	background-color: #cf6969;
+}
+ol > li:hover > a {
+	color: #451717
+}
+ol > li > ul {
+	height: 40px;
+	display: none;
+}
+ol > li > ul > li {
+	background-color: #cf6969;
+	position: relative;
+	z-index: 100;
+	border-top: 1PX dashed #751b1b;
+}
+ol > li > ul > li:hover {
+	background-color: #c34f4f;
+}
+ol > li > ul > li:hover a {
+	color: #451717;
+}
+ol > li:hover > ul {
+	display: block;
 }
